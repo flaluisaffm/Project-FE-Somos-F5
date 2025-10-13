@@ -10,7 +10,7 @@ tooltip.addEventListener('mouseleave', () => {
   tooltipText.style.display = 'none';
 });
 
-
+//add now a button stead of tooltip
 tooltip.addEventListener('click', () => {
   message.textContent = 'Tooltip was clicked';
 });
