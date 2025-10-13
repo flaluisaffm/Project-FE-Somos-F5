@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f2f4f7;
+}
+.form-container{
+    background-color: rgb(221, 226, 230);
+    padding: 45px;
+    border-radius:15px;
+    box-shadow: 0 15px 30px rgb(53, 50, 50);
+    max-width: 30vw;
+    width: 100%;
+}
+.form-container h2{
+    text-align: center;
+    margin-bottom: 20px;  
+}
+.form-container form{
+    margin-top: 20px;
+}
+.input-group{
+    margin-bottom: 20px;
+}
+.input-group label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.input-group input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+}
+.button-login{
+    width: 100%;
+    padding: 10px;
+    border:none;
+    background-color: rgb(20, 53, 160);
+    border-radius: 7px;
+    color: #fff;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+                      

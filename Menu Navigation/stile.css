@@ -1,0 +1,46 @@
+body{
+    background-color: #a1bcd1;
+    margin: 0;
+    padding:0;  
+     
+}
+header{
+    background-color:#8fb0c9;
+    color: #1a1a1a;
+    padding: 0.002em 0; /*em --> it comes from the father container, in this case, body (by default 16 pixels) or rem (it does not com efrom the father container)forms of measuring */
+    text-align: center;
+}
+h1{
+    font-size: 3em;
+    margin: 0;
+    padding: 0;
+    background-color: #8fb0c9;
+}
+.nav-menu{
+    list-style: none;
+    background-color: #adc9de;
+    margin: 0.60em;
+    padding: 0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    
+}
+.nav-menu li{
+    margin: 9px 38px;
+    padding: 5px;
+    transition:  0.55s;
+    border-radius: 10px;
+}
+.nav-menu li:hover{
+    background-color: #92b6d2;
+    font-size: 17.2px;
+}  
+.nav-menu a{
+    text-decoration: none;
+    color: #1a1a1a;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+

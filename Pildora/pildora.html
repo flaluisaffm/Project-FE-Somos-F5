@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pildora: events in JS</title>
+    <link rel="stylesheet" href="pildora.css">
+</head>
+<body>
+    <h1>JS events</h1>
+   <div class="tooltip"><!--This is my container the tooltip class-->
+    Hover over me 
+    <span class="tooltip-text">This text will be displayed as a tooltip!</span>  <!--This is the child of container, the tooltip-text class-->
+    </div>
+
+    <h2>When clicking a message will be displayed</h2>
+    <button class="click">
+    Click me!  
+    <span class="tooltip-click">This will be displayed when clicked</span>
+    </button>
+    <p id="message"></p>
+
+    <script src="pildora.js"></script>
+</body>
+</html>

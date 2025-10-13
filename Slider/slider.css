@@ -1,0 +1,35 @@
+body{
+    background-color: rgb(75, 136, 136);
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h1{
+    text-align: center;
+    margin-bottom: 15px;
+}
+.contenedor-slider{ /*this is the father*/
+    display: flex;
+    min-width: 350px;
+    max-width: 1000px;
+    height: 10vh; /*50vh, this will make more dinamic into different screens*/
+    margin: 0 auto;
+    overflow: hidden;
+    border: 1px solid rgb(13, 45, 92);
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgb(8, 122, 171);
+}   
+.elemento-slider{ /*this is the son*/
+    flex:1;
+    min-width: 0;
+    object-fit: cover;
+    height: 100%;
+    transition: all 0.5s ease-in-out;
+    filter: grayscale(48%);
+}
+.elemento-slider:hover{
+    cursor: crosshair;
+    flex: 2;
+    filter: grayscale(0);
+    transform: scale(1.03);
+}
