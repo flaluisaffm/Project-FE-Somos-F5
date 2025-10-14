@@ -4,55 +4,90 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 body{
+    /*background-color: rgb(216, 214, 212);*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
     background-color: rgb(216, 214, 212);
+
     
 }
-h1{
-    text-align: justify;
+.form-container{
+    background-color: rgb(221, 226, 230);
+    padding: 1.04vh;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 400px;
+
+}
+
+.form-container h2{
+    text-align: center;
     margin-top: 25px;
     margin-bottom: 3vh;
-}
 
-.tooltip{
+}
+.form-container form{
+    margin: 30px;
+  
+}
+.input-group-tooltip{
+    margin-bottom: 20px;
     position: relative;
     display: inline-block;
-    border-bottom: 1px dotted black; /* Add dots under the hoverable text */
+    border-bottom: 1px black; /* Add dots under the hoverable text */
     cursor: default; /*This will make user understand that has something over there*/
    
+   
 }
-.tooltip-text{
-    display: none;
+
+.input-group-tooltip label{ /*tag label under div username*/
+    display: inline-block;
+    font-style: italic;
+    margin-bottom: 9px;
+    color: #1a011a;
+    border-bottom: 1px dotted black;
+ 
+    
+}
+.input-group-tooltip input{ /*This is the tag input under container input-group-tooltip*/
+    width: 100%;
+    padding: 4.5px ;                    /* padding only on top/bottom */
+    border: none;                       /* remove default border */
+    border-bottom: 0.67px solid #140f0f; /* underline effect */
+    background: transparent;             /* remove box background */
+    font-size: 1em;
+    outline: none;                      /* remove blue glow on focus */
+    color: rgb(10, 10, 10);             /* or whatever fits your theme */
+    transition: border-color 0.3s ease;
+   
+}
+.tooltip-text{ /*Span tag under div for username*/
+    visibility: hidden; /* Hidden by default*/
+    width: 130px;
+    background-color: black;
+    color: #ffffff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
     position: absolute;
-    background: black;
-    color: #fff;
-    padding: 5px 5px;
-    border-radius: 10px;
-    top: 27px;
-    left: 0;
-    font-size: 25px;
-    z-index: 2;
+    line-height: 1.0;
+    z-index: 1;  /*Ensure tooltip is displayed above content */
+
+  
 
 }
-h2{
-    text-align: justify;
-    margin-top: 10vh;
-    margin-bottom: 3vh;
+.input-group-tooltip label:hover .tooltip-text{
+    visibility: visible;
 }
-.click{
-    position: relative;
-    display: inline-block;
-    border-bottom: 1px dotted black; /* Add dots under the hoverable text */
-    cursor: pointer; /*This will make user understand that has something over there*/
-}
-.tooltip.click{
-    display: none;
-    position: absolute;
-    background: black;
-    color: #fff;
-    padding: 5px 5px;
-    border-radius: 10px;
-    top: 27px;
-    left: 0;
-    font-size: 25px;
-    z-index: 2;
+.button-login{
+    margin: 0;
+    padding: 7px;
+    width: 100%;
+    border-radius: 7px;
+    color: rgb(217, 222, 226);
+    background-color: rgb(20, 53, 160);
+    transition: border-color 0.3s ease;
+
 }

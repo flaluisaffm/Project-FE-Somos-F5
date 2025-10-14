@@ -1,16 +1,20 @@
-const tooltip = document.querySelector('.tooltip');
-const tooltipText = document.querySelector('.tooltip-text');
-const message = document.querySelector('.tooltip-click');
+const password = document.querySelector('#password');
+//# gets the object by id
+const username = document.querySelector('#username');
+function openExternalLink(event){
+  window.location.href = "https://cdn.pixabay.com/photo/2022/08/21/15/10/welcome-back-7401532_1280.png"
+}
 
-tooltip.addEventListener('mouseenter', () => {
-  tooltipText.style.display = 'block';
+
+username.addEventListener('mouseenter', () => {
+  //tooltipText.style.display = 'block';
+  console.log("You have entered the username");
 });
 
-tooltip.addEventListener('mouseleave', () => {
-  tooltipText.style.display = 'none';
-});
+//password.addEventListener('mouseenter',() => {
+  //Alert to display a message for mouseenter
+ // console.log("Don't forget your password");
 
-
-tooltip.addEventListener('click', () => {
-  message.textContent = 'Tooltip was clicked';
+password.addEventListener('input',() => {
+  console.log(`Your password is ${password.value}`)
 });

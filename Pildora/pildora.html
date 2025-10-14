@@ -3,23 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pildora: events in JS</title>
+    <title>Log in</title>
     <link rel="stylesheet" href="pildora.css">
 </head>
 <body>
-    <h1>JS events</h1>
-   <div class="tooltip"><!--This is my container the tooltip class-->
-    Hover over me 
-    <span class="tooltip-text">This text will be displayed as a tooltip!</span>  <!--This is the child of container, the tooltip-text class-->
+    <div class="form-container">
+        <h2>Welcome back</h2>
+        <form action="/login" method="post">
+            <div class="input-group-tooltip">
+                
+                <label for="username">
+                    Username
+                    <span class="tooltip-text">Fill in with yuour username or email</span>
+                </label>
+                <input type="text" id="username" name="username"  required>            
+            
+            </div>
+             <div class="input-group-tooltip">
+                <label for="password">
+                    Password
+                    <span class="tooltip-text">Min. of 8 characters</span>
+                </label>
+                <input type="password" id="password" name="password" required>   <!--input type as password will hide it -->      
+                
+            </div>
+            <button class="button-login" type="button" onclick="openExternalLink(event)">Click me</button>
+        </form>
     </div>
-
-    <h2>When clicking a message will be displayed</h2>
-    <button class="click">
-    Click me!  
-    <span class="tooltip-click">This will be displayed when clicked</span>
-    </button>
-    <p id="message"></p>
-
     <script src="pildora.js"></script>
 </body>
 </html>
