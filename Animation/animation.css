@@ -4,15 +4,16 @@ body{
     height: 100vh;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
 }
 .heart{
     display: flex;
     justify-content: center;
     width: 100%;
-    max-width: 50%;
+    max-width: 300px;
     overflow: hidden;
-    height: 70%;
+    height: 300px;
     margin: auto;
     object-fit: cover;
 }
@@ -73,6 +74,20 @@ body{
     }
 } */
 
-
+.name{
+    font-size: 60px;
+    font-weight: bold;
+    height: 300px;
+    gap: 5px;
+}
+.letter{
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+.letter:hover{
+    transform: rotate(30deg) scale(1.2);
+    color: rgb(188, 45, 148);
+}
 
   
