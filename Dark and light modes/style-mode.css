@@ -1,6 +1,6 @@
 body{
-    background-color: #fff;
-    color: rgb(9, 2, 57); 
+    background-color: #fdfcff;
+    color: #0b0220; 
     font-family: Arial, Helvetica, sans-serif;
     min-height: 100vh;
     display: flex;
@@ -15,25 +15,25 @@ body{
     padding: 10px 20px;
     border-radius: 15px;
     border: none;
-    background-color: rgb(151, 196, 196);
-    color: rgb(3, 23, 41);
+    background-color: #0b0220;
+    color: #fdfcff;
     cursor: pointer;
     box-shadow: 0 4px 8px rgb(47, 38, 38);
-    transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
 
 }
 #theme-selector{
-    opacity: 0.7;
+    opacity: 0.9;
 }
 
 /* Style dark mode (it overwrite the light mode) */
 /* It applies when the body has the class dark mode */
 .dark-mode{
-    background-color: black;
-    color: #fff;
+    background-color: #0b0220;
+    color: #fdfcff;
 }
 .dark-mode #themre-selector{
-    background-color:rgb(151, 196, 196) ;
-    color: rgb(3, 23, 41);
-    box-shadow: 0 4px 6px purple;
+    background-color:#fdfcff ;
+    color: #0b0220;
+    box-shadow: 0 4px 6px #7053b5;
 }
