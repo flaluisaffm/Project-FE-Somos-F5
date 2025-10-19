@@ -6,11 +6,11 @@
 
 
 // let countingClicks = 0;
-// //The `` is the new value, it makes it cleaner to see and easier to understand
+// //The `` is the new version, it makes it cleaner to see and easier to understand
 // countingClicks = countingClicks +1;
 // console.log(`Initial clicks: ${countingClicks} clicks`);
 
-//let name --> variable let has is being declared by name (variable identifier)
+//let name --> variable let has been declared by name (variable identifier)
 let empty = [];                            //[] it's an empty array (list)  
 let colors = ["red", "blue", "green"];     //Type string
 let numbers = [10, 20, 30, 40, 50];       //Numbers as integer  
