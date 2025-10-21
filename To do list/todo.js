@@ -31,11 +31,53 @@ function addNewList(){
 function createElementToDoList(toDoText, isCompleted = false){
     const li = document.createElement("li");
     li.className="task-item";
+    //created data-text to identify as data
     li.setAttribute("data-text", toDoText);
     if(isCompleted) li.classList.add("completed");
-    
+
+    li.innerHTML = 
+       `<span>${toDoText}</span>
+        <button class="completed-btn">✓</button>
+        <button class="delete-btn"></button>`;
+    li.querySelector("completed-btn").addEventListener("click", completeList);
+    li.querySelector("delete-btn").addEventListener("click", deleteList);
+
+    //creating the son li and agregating to the list
+    listToDo.appendChild(li);
+}
+
+function completeToDo(event){
+    const li = event.target.parentElement; // <li> is the father of the button
+    li.classList.toggle("completed");
+
+    //Atualizar o estado da to do list
+    refreshToDoList(li.getAtribute("data-text"));
+}
+function eliminateList(event){
+    const li = event.target.parentElement; 
+    const listText = li.getAtribute("data-text");
+
+    listToDo.removeChild(li);
+    deleteList(listText);
+}
+const obtainList =  = () => JSON.parse(localStorage.getItem('tasks')) || [];
+
+function loadLists(){
+    obtainList().forEach(task => createElementToDoList(task.text, task.completed));
 
 }
+
+function saveToDo(listText){
+    const tasks = obtainList();
+    tasks.push({text:listText, completed:false});
+    localStorage.getItem("tasks", JSON.stringify(tasks));
+}
+
+function refreshToDoList(listText){
+    let tasks = obtainList();
+    
+}
+
 
 
 
