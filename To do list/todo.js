@@ -12,10 +12,11 @@ const listToDo = document.getElementById("toDoList");
 //Relevant Events
 //DOMContentLoaded load everything from html
 document.addEventListener("DOMContentLoaded", loadLists); 
-addButton.addEventListener("click", addNewList);
+addButton.addEventListener("click", toDoList);
 
 //Functions - logic of the app
-function addNewList(){
+//before I had functin addNewList
+function toDoList(){
     //value means when something input is add in the field
     const toDoText = listInput.value.trim();
     if(toDoText){
@@ -46,21 +47,21 @@ function createElementToDoList(toDoText, isCompleted = false){
     listToDo.appendChild(li);
 }
 
-function completeToDo(event){
+function completeList(event){
     const li = event.target.parentElement; // <li> is the father of the button
     li.classList.toggle("completed");
 
     //Atualizar o estado da to do list
     refreshToDoList(li.getAtribute("data-text"));
 }
-function eliminateList(event){
+function deleteList(event){
     const li = event.target.parentElement; 
     const listText = li.getAtribute("data-text");
 
     listToDo.removeChild(li);
     deleteList(listText);
 }
-const obtainList =  = () => JSON.parse(localStorage.getItem('tasks')) || [];
+const obtainList = () => JSON.parse(localStorage.getItem('tasks')) || [];
 
 function loadLists(){
     obtainList().forEach(task => createElementToDoList(task.text, task.completed));
@@ -75,7 +76,19 @@ function saveToDo(listText){
 
 function refreshToDoList(listText){
     let tasks = obtainList();
-    
+
+    tasks = tasks.map(task =>
+        task.text == listText
+        ? { ...task, completed:!task.completed} //change its state
+        : task //Mantain the remaining tasks the same
+    );
+    localStorage.setItem('tasks', JSON.stringify(tasks));
+
+}
+function deleteList(listText){
+    //we used 'filter'to create a new array without the deleted task
+    const tasks = obtainList().filter(task => task.text !== listText);
+    localStorage.setItem('tasks', JSON.stringify(tasks));
 }
 
 

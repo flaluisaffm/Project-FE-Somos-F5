@@ -6,7 +6,7 @@ const elementBody = document.body;
 //Prove that the class dark-mode exists
 function changeMode(){
     const isOnDarkMode = elementBody.classList.contains("dark-mode");
-    selectorButton.textContent = isOnDarkMode ? "Change it to light mode ☀️" : "chnage it to dark mode 🌙"
+    selectorButton.addEventListener("click",changeTheme) == isOnDarkMode ? "Change it to light mode ☀️" : "chnage it to dark mode 🌙"
     // ? it is a boolean for if else statement, if is on dark mode, switch it to light mode and vice and versa
     //&#9728 a sun icon    
 } 
@@ -18,4 +18,5 @@ function changeTheme(){
 }
 selectorButton.addEventListener("click", changeMode);
 changeMode();
+
 

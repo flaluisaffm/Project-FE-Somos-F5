@@ -2,9 +2,9 @@
   /*bg_body means background color for body*/
   --bg_body: #bec2be;
   --tx_color: rgb(21, 11, 56);
-  --h1_color: rgb(29, 24, 55);
-  --shadows: rgb(107, 107, 77);
-  --bg_button: rgb(38, 38, 56);
+  --h1_color: rgb(255, 255, 255);
+  --shadows: rgb(132, 40, 120);
+  --bg_button: rgb(102, 52, 149);
   --border: rgb(45, 74, 52);
 }
 body {
@@ -15,6 +15,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   min-height: 100vh;
 }
 .header {
@@ -22,10 +23,11 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  max-width: 600px;
+  /*max-width: 600px;*/
+  box-sizing: border-box;
   margin-top: 2rem;
   margin-bottom: 2rem;
-  padding: 2rem;
+  padding: 3rem;
 }
 .header-container {
   display: flex;
@@ -33,9 +35,9 @@ body {
   justify-content: center;
   align-items: center;
 }
-.perfil.image {
-  width: 200px;
-  height: 200px;
+.perfil-image {
+  width: 300px;
+  height: 300px;
   margin: auto;
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -44,18 +46,19 @@ body {
   border: 3px solid var(--border);
   box-shadow: 0 0 25px var(--shadows);
 }
-.img {
+img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 .button {
   background-color: var(--bg_button);
-  color: var(--tx_color);
-  padding: 15px;
-  border-radius: 15px;
-  box-shadow: 0 8px 25px ;
+  color: var(--h1_color);
+  padding: 2px;
+  border-radius: 5px;
+  box-shadow: 0 8px 25px var(--shadows);
   text-decoration: none;
-  color: var(--h1_color)
-
+}
+.button:hover {
+  background-color: blue;
 }
