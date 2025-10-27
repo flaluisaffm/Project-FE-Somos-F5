@@ -9,12 +9,12 @@ body{
     justify-content: center;
     align-items: center;
     height: 100dvh;
-    background-color: rgb(216, 214, 212);
+    background-color: #d9c2d8;
 
     
 }
 .form-container{
-    background-color: rgb(221, 226, 230);
+     background-color: #d6b6d1;/*rgb(221, 226, 230) */
     padding: 1.04vh;
     border-radius: 15px;
     width: 100%;
@@ -87,7 +87,7 @@ body{
     width: 100%;
     border-radius: 7px;
     color: rgb(217, 222, 226);
-    background-color: rgb(20, 53, 160);
+    background-color: rgb(160, 20, 125);
     transition: border-color 0.3s ease;
 
 }

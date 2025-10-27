@@ -1,6 +1,6 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: rgb(248, 246, 242);
+  background-color: #d9c2d8; /* rgb(248, 246, 242)*/
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,7 +9,7 @@ body {
   padding: 0;
 }
 .todo-app {
-  background-color: #fff;
+  background-color: #d6b6d1;
   padding: 2rem;
   border-radius: 19px;
   box-shadow: 0 4px 15px rgb(26, 8, 8);
@@ -26,10 +26,11 @@ h1 {
   border-radius: 8px;
   padding: 3px;
   margin-right: 2px;
+  background-color: rgb(231, 213, 216);
   border: 1px solid rgb(56, 48, 48);
 }
 #addList {
-  background-color: rgb(69, 54, 199);
+  background-color: rgb(160, 20, 125);
   color: #fff;
   border-radius: 8px;
   padding: 3px 4px;
@@ -37,7 +38,7 @@ h1 {
   transition: background-color 0.2s;
 }
 #addList:hover {
-  background-color: rgb(77, 77, 240);
+  background-color: rgb(197, 70, 165);
 }
 #toDoList {
   list-style: none;
@@ -51,9 +52,9 @@ h1 {
   align-items: center;
   padding: 10px 15px;
   margin-bottom: 10px;
-  background-color: #fff;
+  background-color: #ea98dd;
   border-radius: 5px;
-  border-left: 5px solid rgb(69, 54, 199);
+  border-left: 5px solid rgb(141, 11, 125);
   transition: all 0.3s ease;
 }
 .task-item span {

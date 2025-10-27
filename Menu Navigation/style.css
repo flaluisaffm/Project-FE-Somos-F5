@@ -1,15 +1,15 @@
 body {
-  background-color: lightcyan;
+  /* background-color: rgb(183, 207, 207); */
   margin: 40px;
   padding: 0;
-  background-color: #92b6d2;
+  background-color: #d9c2d8;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
 }
 header {
-  background-color: #8fb0c9;
+  /* background-color: #c0d4e4; */
   color: #1a1a1a;
   padding: 0.002em 0; /*em --> it comes from the father container, in this case, body (by default 16 pixels) or rem (it does not com efrom the father container)forms of measuring */
   text-align: center;
@@ -19,26 +19,32 @@ h1 {
   font-size: 3em;
   margin: 10px;
   padding: 0;
-  background-color: #8fb0c9;
+  text-align: center;
+  background-color: #d9c2d8;
 }
 .nav-menu {
+  display: flex;
+  flex-wrap: wrap;
   list-style: none;
-  background-color: #bbe3fa;
+  background-color: #d6b6d1;
   margin: 0.6em;
   padding: 0;
-  border-radius: 10px;
+  overflow: hidden;
+  border-radius: 15px;
   display: flex;
   justify-content: center;
 }
 .nav-menu li {
   margin: 10px 6vh;
+  font-size: 2.55vh;
   padding: 5px;
   font-weight: bold;
+  overflow: hidden;
   transition: 0.55s;
   border-radius: 10px;
 }
 .nav-menu li:hover {
-  background-color: #efdeed;
+  background-color: #eccbe9;
   font-size: 17.2px;
 }
 .nav-menu a {

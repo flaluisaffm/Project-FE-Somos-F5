@@ -1,11 +1,11 @@
 :root {
   /*bg_body means background color for body*/
-  --bg_body: #bec2be;
+  --bg_body: #d9c2d8; /*bec2be*/
   --tx_color: rgb(21, 11, 56);
   --h1_color: rgb(255, 255, 255);
   --shadows: rgb(132, 40, 120);
-  --bg_button: rgb(102, 52, 149);
-  --border: rgb(45, 74, 52);
+  --bg_button: rgb(160, 20, 125);
+  --border: rgb(180, 82, 169);
 }
 body {
   background-color: var(--bg_body);
@@ -23,7 +23,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  /*max-width: 600px;*/
+  max-width: 600px;
   box-sizing: border-box;
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -54,11 +54,16 @@ img {
 .button {
   background-color: var(--bg_button);
   color: var(--h1_color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1.5em;
+  width: 20vh;
   padding: 2px;
   border-radius: 5px;
   box-shadow: 0 8px 25px var(--shadows);
   text-decoration: none;
 }
 .button:hover {
-  background-color: blue;
+  background-color: rgb(195, 201, 204);
 }

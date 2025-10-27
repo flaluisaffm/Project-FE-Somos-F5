@@ -3,7 +3,7 @@
   padding: 0;
 }
 body {
-  background-color: lightcyan;
+  background-color: #d9c2d8;
   text-align: center;
 }
 .container {
@@ -28,25 +28,25 @@ body {
   border: none;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
   font-size: 8vmin;
-  background-color: rgb(122, 169, 120);
+  background-color: rgb(208, 110, 190);
 }
 /*id of reset button*/
 #reset {
   padding: 1rem;
   font-size: 1.25rem;
-  background: #191913;
+  background: rgb(160, 20, 125);
   color: white;
   border-radius: 1rem;
   border: none;
 }
 .box:hover {
-  background-color: rgb(234, 225, 110);
+  background-color: rgb(235, 198, 227);
 }
 /*id of new game button*/
 #new-btn {
   padding: 1rem;
   font-size: 1.25rem;
-  background: #191913;
+  background: rgb(160, 20, 125);
   color: white;
   border-radius: 1rem;
   border: none;
