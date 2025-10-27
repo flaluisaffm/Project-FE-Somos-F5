@@ -1,35 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Log in</title>
-    <link rel="stylesheet" href="pildora.css">
-</head>
-<body>
+    <link rel="stylesheet" href="pildora.css" />
+  </head>
+  <body>
     <div class="form-container">
-        <h2>Welcome back</h2>
-        <form action="/login" method="post">
-            <div class="input-group-tooltip">
-                
-                <label for="username">
-                    Username
-                    <span class="tooltip-text">Fill in with yuour username or email</span>
-                </label>
-                <input type="text" id="username" name="username"  required>            
-            
-            </div>
-             <div class="input-group-tooltip">
-                <label for="password">
-                    Password
-                    <span class="tooltip-text">Min. of 8 characters</span>
-                </label>
-                <input type="password" id="password" name="password" required>   <!--input type as password will hide it -->      
-                
-            </div>
-            <button class="button-login" type="button" onclick="openExternalLink(event)">Click me</button>
-        </form>
+      <h2>Welcome back</h2>
+      <form action="/login" method="post">
+        <div class="input-group-tooltip">
+          <label for="username">
+            Username
+            <span class="tooltip-text"
+              >Fill in with yuour username or email</span
+            >
+          </label>
+          <input type="text" id="username" name="username" required />
+        </div>
+        <div class="input-group-tooltip">
+          <label for="password">
+            Password
+            <span class="tooltip-text">Min. of 8 characters</span>
+          </label>
+          <input type="password" id="password" name="password" required />
+          <!--input type as password will hide it -->
+        </div>
+        <button
+          class="button-login"
+          type="button"
+          onclick="openExternalLink(event)"
+        >
+          Click me
+        </button>
+      </form>
     </div>
     <script src="pildora.js"></script>
-</body>
+  </body>
 </html>
